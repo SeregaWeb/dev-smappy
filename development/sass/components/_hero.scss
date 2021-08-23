@@ -1,0 +1,56 @@
+.hero {
+    width: 100%;
+    height: 1004px;
+    background-image: url('../../static/images/first-screen.png');
+    background-size: 1920px 1004px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+    }
+    &-title {
+        margin-bottom: 146px;
+        margin-right: 248px;
+       
+        &__paragraph {
+            font-family: Assistant;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 72px;
+            line-height: 94px;
+            text-align: center;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+            text-align: right;
+        }
+    }
+    &-blocks {
+        width: 771px;
+        height: 707px;
+       position: relative;
+    }
+    &-block {
+        &__top {
+            position: absolute;
+            top: -60px;
+            right: -60px;
+        }
+        &__left {
+            position: absolute;
+            bottom: 50%;
+            left: -60px;
+            transform: translate(0, 50%);
+        }
+
+        &__bottom {
+            position: absolute;
+            bottom: -60px;
+            right: -60px;
+        }
+    }
+}

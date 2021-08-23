@@ -1,0 +1,102 @@
+@import "_reset.scss";
+@import "variables";
+@import "mixin";
+@import "fonts";
+@import "_modal_window.scss";
+@import "_jquery.fancybox.min.scss";
+@import "_slick.scss";
+@import "_animations";
+@import '_404';
+
+@import './components/header';
+@import './components/hero';
+@import './components/card';
+@import './components/circles';
+
+.hidden {
+	display: none !important;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+html {
+	overflow-x: hidden;
+
+	&.popup-opened {
+		overflow: hidden;
+
+		body {
+			height: 100vh;
+		}
+	}
+}
+
+body {
+	overflow-x: hidden;
+	&.popup-opened {
+		overflow: hidden;
+	}
+}
+
+* {
+	outline: none !important;
+	box-sizing: border-box !important;
+}
+
+ul {
+	list-style: none;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.wrapper {
+	max-width: 1920px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.container-fluid {
+	width: 100%;
+	padding: 0 20px;
+}
+
+.container {
+	width: 1200px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: auto;
+	margin-right: auto;
+
+	@include break(desktop) {
+		width: 970px;
+	}
+	@include break(medium) {
+		width: calc(100% - 60px);
+	}
+	@include break(small) {
+		width: calc(100% - 40px);
+	}
+}
+
+.row {
+	margin-left: -20px;
+	margin-right: -20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+p:empty {
+	display: none;
+}
+
+
+
