@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-Medium.eot');
+    src: url('Rubik-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Rubik-Medium.woff2') format('woff2'),
+        url('Rubik-Medium.woff') format('woff'),
+        url('Rubik-Medium.ttf') format('truetype'),
+        url('Rubik-Medium.svg#Rubik-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('Spartan-Medium.eot');
+    src: url('Spartan-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Spartan-Medium.woff2') format('woff2'),
+        url('Spartan-Medium.woff') format('woff'),
+        url('Spartan-Medium.ttf') format('truetype'),
+        url('Spartan-Medium.svg#Spartan-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('Spartan-Bold.eot');
+    src: url('Spartan-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Spartan-Bold.woff2') format('woff2'),
+        url('Spartan-Bold.woff') format('woff'),
+        url('Spartan-Bold.ttf') format('truetype'),
+        url('Spartan-Bold.svg#Spartan-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: url('Assistant-ExtraBold.eot');
+    src: url('Assistant-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Assistant-ExtraBold.woff2') format('woff2'),
+        url('Assistant-ExtraBold.woff') format('woff'),
+        url('Assistant-ExtraBold.ttf') format('truetype'),
+        url('Assistant-ExtraBold.svg#Assistant-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-ExtraBold.eot');
+    src: url('Rubik-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Rubik-ExtraBold.woff2') format('woff2'),
+        url('Rubik-ExtraBold.woff') format('woff'),
+        url('Rubik-ExtraBold.ttf') format('truetype'),
+        url('Rubik-ExtraBold.svg#Rubik-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-Light.eot');
+    src: url('Rubik-Light.eot?#iefix') format('embedded-opentype'),
+        url('Rubik-Light.woff2') format('woff2'),
+        url('Rubik-Light.woff') format('woff'),
+        url('Rubik-Light.ttf') format('truetype'),
+        url('Rubik-Light.svg#Rubik-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-SemiBold.eot');
+    src: url('Rubik-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Rubik-SemiBold.woff2') format('woff2'),
+        url('Rubik-SemiBold.woff') format('woff'),
+        url('Rubik-SemiBold.ttf') format('truetype'),
+        url('Rubik-SemiBold.svg#Rubik-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-Regular.eot');
+    src: url('Rubik-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Rubik-Regular.woff2') format('woff2'),
+        url('Rubik-Regular.woff') format('woff'),
+        url('Rubik-Regular.ttf') format('truetype'),
+        url('Rubik-Regular.svg#Rubik-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

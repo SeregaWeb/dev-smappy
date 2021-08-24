@@ -1,98 +1,103 @@
 @font-face {
-	font-family: 'Montserrat';
-	src: url('../../static/fonts/Montserrat-Bold.eot');
-	src: url('../../static/fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
-	url('../../static/fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg'),
-	url('../../static/fonts/Montserrat-Bold.ttf') format('truetype'),
-	url('../../static/fonts/Montserrat-Bold.woff') format('woff'),
-	url('../../static/fonts/Montserrat-Bold.woff2') format('woff2');
-	font-weight: 700;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Montserrat';
-	src: url('../../static/fonts/Montserrat-SemiBold.eot');
-	src: url('../../static/fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
-	url('../../static/fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg'),
-	url('../../static/fonts/Montserrat-SemiBold.ttf') format('truetype'),
-	url('../../static/fonts/Montserrat-SemiBold.woff') format('woff'),
-	url('../../static/fonts/Montserrat-SemiBold.woff2') format('woff2');
-	font-weight: 600;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Montserrat';
-	src: url('../../static/fonts/Montserrat-Black.eot');
-	src: url('../../static/fonts/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
-	url('../../static/fonts/Montserrat-Black.svg#Montserrat-Black') format('svg'),
-	url('../../static/fonts/Montserrat-Black.ttf') format('truetype'),
-	url('../../static/fonts/Montserrat-Black.woff') format('woff'),
-	url('../../static/fonts/Montserrat-Black.woff2') format('woff2');
-	font-weight: 800;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Montserrat';
-	src: url('../../static/fonts/Montserrat-Medium.eot');
-	src: url('../../static/fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
-	url('../../static/fonts/Montserrat-Medium.svg#Montserrat-Medium') format('svg'),
-	url('../../static/fonts/Montserrat-Medium.ttf') format('truetype'),
-	url('../../static/fonts/Montserrat-Medium.woff') format('woff'),
-	url('../../static/fonts/Montserrat-Medium.woff2') format('woff2');
+	font-family: 'Rubik';
+	src: url('../../static/fonts/converted-fonts/Rubik-Medium.eot');
+	src: url('../../static/fonts/converted-fonts/Rubik-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../../static/fonts/converted-fonts/Rubik-Medium.woff2') format('woff2'),
+		url('../../static/fonts/converted-fonts/Rubik-Medium.woff') format('woff'),
+		url('../../static/fonts/converted-fonts/Rubik-Medium.ttf') format('truetype'),
+		url('../../static/fonts/converted-fonts/Rubik-Medium.svg#Rubik-Medium') format('svg');
 	font-weight: 500;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url('../../static/fonts/Montserrat-Regular.eot');
-	src: url('../../static/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
-	url('../../static/fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg'),
-	url('../../static/fonts/Montserrat-Regular.ttf') format('truetype'),
-	url('../../static/fonts/Montserrat-Regular.woff') format('woff'),
-	url('../../static/fonts/Montserrat-Regular.woff2') format('woff2');
-	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "Roboto";
-	src: url("../../static/fonts/Roboto-Regular.eot"); /* IE9 Compat Modes */
-	src: url("../../static/fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-	url("../../static/fonts/Roboto-Regular.otf") format("opentype"), /* Open Type Font */
-	url("../../static/fonts/Roboto-Regular.svg") format("svg"), /* Legacy iOS */
-	url("../../static/fonts/Roboto-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
-	url("../../static/fonts/Roboto-Regular.woff") format("woff"), /* Modern Browsers */
-	url("../../static/fonts/Roboto-Regular.woff2") format("woff2"); /* Modern Browsers */
+	font-family: 'Spartan';
+	src: url('../../static/fonts/converted-fonts/Spartan-Medium.eot');
+	src: url('../../static/fonts/converted-fonts/Spartan-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../../static/fonts/converted-fonts/Spartan-Medium.woff2') format('woff2'),
+		url('../../static/fonts/converted-fonts/Spartan-Medium.woff') format('woff'),
+		url('../../static/fonts/converted-fonts/Spartan-Medium.ttf') format('truetype'),
+		url('../../static/fonts/converted-fonts/Spartan-Medium.svg#Spartan-Medium') format('svg');
 	font-weight: 500;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-	font-family: "Roboto";
-	src: url("../../static/fonts/Roboto-Light.eot"); /* IE9 Compat Modes */
-	src: url("../../static/fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-	url("../../static/fonts/Roboto-Light.otf") format("opentype"), /* Open Type Font */
-	url("../../static/fonts/Roboto-Light.svg") format("svg"), /* Legacy iOS */
-	url("../../static/fonts/Roboto-Light.ttf") format("truetype"), /* Safari, Android, iOS */
-	url("../../static/fonts/Roboto-Light.woff") format("woff"), /* Modern Browsers */
-	url("../../static/fonts/Roboto-Light.woff2") format("woff2"); /* Modern Browsers */
+	font-family: 'Spartan';
+	src: url('../../static/fonts/converted-fonts/Spartan-Bold.eot');
+	src: url('../../static/fonts/converted-fonts/Spartan-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../../static/fonts/converted-fonts/Spartan-Bold.woff2') format('woff2'),
+		url('../../static/fonts/converted-fonts/Spartan-Bold.woff') format('woff'),
+		url('../../static/fonts/converted-fonts/Spartan-Bold.ttf') format('truetype'),
+		url('../../static/fonts/converted-fonts/Spartan-Bold.svg#Spartan-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Assistant';
+	src: url('../../static/fonts/converted-fonts/Assistant-ExtraBold.eot');
+	src: url('../../static/fonts/converted-fonts/Assistant-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../../static/fonts/converted-fonts/Assistant-ExtraBold.woff2') format('woff2'),
+		url('../../static/fonts/converted-fonts/Assistant-ExtraBold.woff') format('woff'),
+		url('../../static/fonts/converted-fonts/Assistant-ExtraBold.ttf') format('truetype'),
+		url('../../static/fonts/converted-fonts/Assistant-ExtraBold.svg#Assistant-ExtraBold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Rubik';
+	src: url('../../static/fonts/converted-fonts/Rubik-ExtraBold.eot');
+	src: url('../../static/fonts/converted-fonts/Rubik-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../../static/fonts/converted-fonts/Rubik-ExtraBold.woff2') format('woff2'),
+		url('../../static/fonts/converted-fonts/Rubik-ExtraBold.woff') format('woff'),
+		url('../../static/fonts/converted-fonts/Rubik-ExtraBold.ttf') format('truetype'),
+		url('../../static/fonts/converted-fonts/Rubik-ExtraBold.svg#Rubik-ExtraBold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Rubik';
+	src: url('../../static/fonts/converted-fonts/Rubik-Light.eot');
+	src: url('../../static/fonts/converted-fonts/Rubik-Light.eot?#iefix') format('embedded-opentype'),
+		url('../../static/fonts/converted-fonts/Rubik-Light.woff2') format('woff2'),
+		url('../../static/fonts/converted-fonts/Rubik-Light.woff') format('woff'),
+		url('../../static/fonts/converted-fonts/Rubik-Light.ttf') format('truetype'),
+		url('../../static/fonts/converted-fonts/Rubik-Light.svg#Rubik-Light') format('svg');
 	font-weight: 300;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-	font-family: "Roboto";
-	src: url("../../static/fonts/Roboto-Bold.eot"); /* IE9 Compat Modes */
-	src: url("../../static/fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-	url("../../static/fonts/Roboto-Bold.otf") format("opentype"), /* Open Type Font */
-	url("../../static/fonts/Roboto-Bold.svg") format("svg"), /* Legacy iOS */
-	url("../../static/fonts/Roboto-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
-	url("../../static/fonts/Roboto-Bold.woff") format("woff"), /* Modern Browsers */
-	url("../../static/fonts/Roboto-Bold.woff2") format("woff2"); /* Modern Browsers */
-	font-weight: 700;
+	font-family: 'Rubik';
+	src: url('../../static/fonts/converted-fonts/Rubik-SemiBold.eot');
+	src: url('../../static/fonts/converted-fonts/Rubik-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('../../static/fonts/converted-fonts/Rubik-SemiBold.woff2') format('woff2'),
+		url('../../static/fonts/converted-fonts/Rubik-SemiBold.woff') format('woff'),
+		url('../../static/fonts/converted-fonts/Rubik-SemiBold.ttf') format('truetype'),
+		url('../../static/fonts/converted-fonts/Rubik-SemiBold.svg#Rubik-SemiBold') format('svg');
+	font-weight: 600;
 	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Rubik';
+	src: url('../../static/fonts/converted-fonts/Rubik-Regular.eot');
+	src: url('../../static/fonts/converted-fonts/Rubik-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../../static/fonts/converted-fonts/Rubik-Regular.woff2') format('woff2'),
+		url('../../static/fonts/converted-fonts/Rubik-Regular.woff') format('woff'),
+		url('../../static/fonts/converted-fonts/Rubik-Regular.ttf') format('truetype'),
+		url('../../static/fonts/converted-fonts/Rubik-Regular.svg#Rubik-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }

@@ -1,0 +1,94 @@
+.partners {
+    padding-top: 45px;
+    padding-bottom: 80px;
+    position: relative;
+
+    &:before {
+        content: '';
+        background-image: url('../../static/images/partners/Vector7.svg');
+        position: absolute;
+        width: 184px;
+        height: 513px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: right;
+        right: -60px;
+        top: 60px;
+        z-index: 1;
+    }
+
+    &-wrapper {
+        display: grid;
+        grid-template-columns: 160px 160px 160px 160px 160px 160px 160px;
+        grid-gap: 30px;
+        justify-content: center;
+        padding-bottom: 80px;
+    }
+
+    &-info {
+        max-width: 1170px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &-subtitle {
+        font-family: $rubik;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 60px;
+        text-align: right;
+        color: $black;
+    }
+
+    &-desk {
+        display: block;
+        font-family: $rubik;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 60px;
+        text-align: right;
+        color: $black;
+        margin-bottom: 15px;
+    }
+
+    &-text {
+        font-family: $rubik;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 48px;
+        text-align: right;
+        color: $grey;
+    }
+
+    &-figure {
+        width: 100%;
+        height: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        z-index: 1;
+    }
+
+    &-img {
+        width: auto;
+        height: auto;
+    }
+
+    &-title {
+        font-family: $rubik;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 1;
+        text-align: center;
+        text-transform: uppercase;
+        color: $black;
+        margin-bottom: 40px;
+    }
+}
