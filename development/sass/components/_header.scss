@@ -9,4 +9,13 @@
     width: 100%;
     padding: 30px 60px;
     z-index: 15;
+    @include break (laptop) {
+        padding: 10px 20px;
+        svg {
+
+    width: 145px;
+    height: 40px;
+
+        }
+    }
 }

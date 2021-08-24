@@ -3,6 +3,10 @@
     padding-bottom: 40px;
     position: relative;
 
+    @include break (tablet) {
+        padding-top: 40px;
+    }
+
     &::after {
         content: '';
         background-image: url('../../static/images/Vector8.svg');
@@ -28,6 +32,14 @@
         margin: 0 auto;
         position: relative;
         z-index: 2;
+
+        @include break (tablet) {
+            grid-template-columns: 280px 280px;
+        }
+
+        @include break (small) {
+            grid-template-columns: 1fr;
+        }
     }
 
     &-title {
@@ -39,6 +51,34 @@
         text-align: center;
         color: $black;
         margin-bottom: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include break (tablet) {
+            font-size: 40px;
+            line-height: 46px;
+        }
+
+        @include break (phone) {
+            font-size: 30px;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+
+        svg {
+            margin: 0 4px;
+            margin-top: 20px;
+
+            @include break (tablet) {
+                max-width: 145px;
+                margin-top: 10px;
+            }
+
+            @include break (phone) {
+                max-width: 115px;
+            }
+        }
 
     }
 }
@@ -54,6 +94,29 @@
     border-radius: 50%;
     z-index: 1;
     position: relative;
+
+
+
+
+    @include break (small) {
+        margin: 0 auto;
+
+        &:nth-of-type(1) {
+            order: 2;
+        }
+
+        &:nth-of-type(2) {
+            order: 1;
+        }
+
+        &:nth-of-type(3) {
+            order: 4;
+        }
+
+        &:nth-of-type(4) {
+            order: 3;
+        }
+    }
 
     * {
         z-index: 3;
@@ -72,11 +135,23 @@
             }
 
             height: 77px;
+
+            @include break (tablet) {
+
+                height: 45px;
+
+            }
         }
 
         img {
             width: auto;
             height: 77px;
+
+            @include break (tablet) {
+
+                height: 45px;
+
+            }
         }
     }
 
@@ -112,20 +187,55 @@
         padding-bottom: 5px;
         padding-left: 5px;
 
+        @include break (tablet) {
+            right: -80px;
+        }
+
+        @include break (phone) {
+            right: -35px;
+            top: -35px;
+        }
+
         &--orange {
             background-image: url('../../static/images/label-orange.svg');
             right: -55px;
+
+            @include break (tablet) {
+                right: -80px;
+            }
+
+            @include break (phone) {
+                right: -35px;
+                top: -35px;
+            }
         }
     }
 
     &-big {
         width: 518px;
         height: 518px;
+
+        @include break (tablet) {
+            width: 280px;
+            height: 280px;
+        }
     }
 
     &-small {
         width: 437px;
         height: 437px;
+
+        @include break (tablet) {
+            width: 280px;
+            height: 280px;
+        }
+    }
+
+    svg {
+        @include break (tablet) {
+            width: 40px;
+            height: 40px;
+        }
     }
 
     strong {
@@ -137,6 +247,12 @@
         text-align: center;
         color: $black;
         margin-top: 25px;
+
+        @include break (tablet) {
+            font-size: 24px;
+            line-height: 26px;
+            margin-top: 10px;
+        }
     }
 
     p {
@@ -148,5 +264,11 @@
         line-height: 36px;
         text-align: center;
         color: $grey;
+
+        @include break (tablet) {
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 10px;
+        }
     }
 }

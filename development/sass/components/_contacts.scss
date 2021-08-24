@@ -3,6 +3,10 @@
     overflow: hidden;
     min-height: 1057px;
 
+    @include break (tablet) {
+        min-height: 606px;
+    }
+
     &::after {
         content: '';
         position: absolute;
@@ -13,6 +17,10 @@
         background-image: url('../../static/images/bg.svg');
         background-size: 100%;
         background-repeat: no-repeat;
+
+        @include break (tablet) {
+            left: -300px;
+        }
     }
 
     &-wrapper {
@@ -24,10 +32,23 @@
         z-index: 1;
         margin: 0 auto;
         position: relative;
+
+        @include break (tablet) {
+            min-height: 350px;
+        }
+
+        @include break (small) {
+            flex-direction: column-reverse;
+        }
     }
 
     &-btns {
         margin-top: 70px;
+
+        @include break (small) {
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
 
         &__title {
             font-family: $rubik;
@@ -38,11 +59,26 @@
             text-transform: uppercase;
             color: $black;
             margin-bottom: 37px;
+
+            @include break (tablet) {
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+
+            @include break (small) {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
         }
 
         &__container {
             display: flex;
             min-width: 500px;
+
+            @include break (small) {
+                min-width: 0;
+                width: 100%;
+            }
         }
 
         &__control {
@@ -67,12 +103,33 @@
             letter-spacing: 0.08em;
             color: $black;
 
+            @include break (tablet) {
+                padding: 15px 25px;
+                min-width: 160px;
+                margin-left: 15px;
+            }
+
+            @include break (small) {
+                padding: 10px 10px;
+                min-width: 140px;
+                font-size: 14px;
+            }
+
             &:hover {
                 background: linear-gradient(315deg, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #FFEEF2;
             }
 
             svg {
                 margin-bottom: 17px;
+
+                @include break (tablet) {
+                    margin-bottom: 5px;
+                    height: 25px;
+                }
+
+                @include break (small) {
+                    height: 20px;
+                }
             }
 
             &:first-child {
@@ -81,10 +138,27 @@
         }
     }
 
+    &-figure {
+        @include break (small) {
+            max-width: 300px;
+            width: 100%;
+        }
+    }
+
     &-image {
         position: absolute;
         top: 0;
         left: 544px;
+
+        @include break (tablet) {
+            width: 430px;
+        }
+
+        @include break (small) {
+            position: static;
+            max-width: 300px;
+            width: 100%;
+        }
     }
 }
 
@@ -98,33 +172,124 @@
     z-index: 1;
     background-image: url('../../static/images/bg2.svg');
     background-repeat: no-repeat;
+
+    @include break (small) {
+        background-size: cover;
+    }
+
+    @include break (phone) {
+        background: linear-gradient(90deg, #FE0555 0%, #FF8700 100%);
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
     &-wrapper {
         max-width: 1400px;
         display: flex;
         justify-content: space-between;
-        margin-left: 175px;
+        padding-left: 175px;
+        padding-right: 20px;
         position: relative;
         z-index: 2;
+
+        @include break (small) {
+            flex-wrap: wrap;
+        }
+
+        @include break (phone) {
+            flex-direction: column;
+            padding-left: 20px;
+        }
     }
 
     &-logo {
         margin-top: 10px;
+
+        @include break (tablet) {
+            margin-top: 0;
+        }
     }
 
     &-contacts {
         margin-top: 45px;
+
+        @include break (tablet) {
+            margin-top: 5px;
+        }
+
+        @include break (phone) {
+            margin-top: 15px;
+        }
     }
 
     &-links {
         margin-right: 22px;
+
+        @include break (tablet) {
+            margin-right: 10px;
+        }
+
     }
 
     &-made {
         text-align: center;
         margin-top: 27px;
+
+        @include break (tablet) {
+            margin-top: 15px;
+        }
+
+        @include break (small) {
+            text-align: left;
+            margin-top: 5px;
+        }
+
+        @include break (phone) {
+            margin-top: 15px;
+        }
     }
 
-    &-center {}
+
+    &-left {
+        @include break (small) {
+            width: 50%;
+        }
+
+        @include break (phone) {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+    }
+
+    &-center {
+        @include break (small) {
+            width: 50%;
+        }
+
+        @include break (phone) {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+    }
+
+    &-right {
+        display: flex;
+
+        @include break (small) {
+            width: 100%;
+            justify-content: flex-end;
+        }
+        @include break (phone) {
+            justify-content: space-around;
+        }
+    }
 
     &-title {
         font-family: $rubik;
@@ -134,6 +299,11 @@
         line-height: 47px;
         text-align: right;
         color: #FFFFFF;
+
+        @include break (tablet) {
+            font-size: 30px;
+            line-height: 1.2;
+        }
 
     }
 
@@ -146,16 +316,23 @@
         text-align: right;
         color: #FFFFFF;
 
+        @include break (tablet) {
+            font-size: 20px;
+            line-height: 1.2;
+        }
+
     }
 
-    &-right {
-        display: flex;
-    }
     &-block {
         margin-left: 65px;
+
+        @include break (tablet) {
+            margin-left: 25px;
+        }
+
         &__title {
             display: block;
-            font-family: Rubik;
+            font-family: $rubik;
             font-style: normal;
             font-weight: bold;
             font-size: 16px;
@@ -163,10 +340,11 @@
             text-align: right;
             color: #FFFFFF;
             margin-bottom: 2px;
-            
+
         }
+
         &__text {
-            font-family: Rubik;
+            font-family: $rubik;
             font-style: normal;
             font-weight: normal;
             font-size: 14px;

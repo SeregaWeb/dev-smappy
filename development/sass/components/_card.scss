@@ -5,13 +5,13 @@
         content: '';
         background-image: url('../../static/images/Vector2.svg');
         position: absolute;
-        height: 869px;
-        width: 396px;
+        height: 413px;
+        width: 200px;
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: right;
-        right: -62px;
-        top: -140px;
+        right: -20px;
+        top: -50px;
         z-index: 1;
     }
 
@@ -19,13 +19,13 @@
         content: '';
         background-image: url('../../static/images/Vector5.svg');
         position: absolute;
-        height: 765px;
-        width: 510px;
+        height: 350px;
+        width: 250px;
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center;
         left: 0;
-        bottom: -215px;
+        bottom: 0;
         z-index: 1;
     }
 
@@ -35,13 +35,32 @@
         padding: 54px 68px 86px;
         display: flex;
         justify-content: space-between;
-        max-width: 1120px;
+        max-width: 1110px;
         height: auto;
         box-shadow: (6px 6px 40px rgba(14, 93, 137, 0.22));
         margin: 0 auto;
         position: relative;
         background-color: #ffffff;
         border-radius: 40px;
+
+        @include break (tablet) {
+            padding: 30px 25px;
+            max-width: 768px;
+
+        }
+
+        @include break (small) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+
+        img {
+            @include break (tablet) {
+                max-height: 220px;
+            }
+        }
 
         h3 {
             font-family: $rubik;
@@ -51,6 +70,21 @@
             line-height: 60px;
             color: $black;
             margin-bottom: 42px;
+
+            @include break (tablet) {
+                font-size: 26px;
+                line-height: 32px;
+                margin-bottom: 20px;
+            }
+
+            @include break (small) {
+                margin-top: 20px;
+            }
+
+            @include break (phone) {
+                font-size: 20px;
+                line-height: 1.2;
+            }
         }
 
         strong {
@@ -62,6 +96,17 @@
             line-height: 40px;
             color: $black;
             margin-bottom: 42px;
+
+            @include break (tablet) {
+                font-size: 22px;
+                line-height: 26px;
+                margin-bottom: 16px;
+            }
+
+            @include break (phone) {
+                font-size: 18px;
+                line-height: 1.2;
+            }
         }
 
         p {
@@ -71,6 +116,16 @@
             font-size: 26px;
             line-height: 1.8;
             color: $grey;
+
+            @include break (tablet) {
+                font-size: 18px;
+                line-height: 1.4;
+            }
+
+            @include break (phone) {
+                font-size: 14px;
+                line-height: 1.2;
+            }
         }
     }
 }

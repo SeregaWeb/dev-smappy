@@ -31,8 +31,8 @@
 		@media only screen and (max-width: 1470px) {
 			@content;
 		}
-	} @else if $point == large1300 {
-		@media only screen and (max-width: 1300px) {
+	} @else if $point == laptop {
+		@media only screen and (max-width: 1366px) {
 			@content;
 		}
 	} @else if $point == desktop {
@@ -40,7 +40,7 @@
 			@content;
 		}
 	} @else if $point == tablet {
-		@media only screen and (max-width: 1024px) {
+		@media only screen and (max-width: 1124px) {
 			@content;
 		}
 	} @else if $point == medium {
@@ -72,7 +72,7 @@
 		@media only screen and (max-width: 670px) {
 			@content;
 		}
-	}@else if $point == ss-small-570 {
+	}@else if $point == phone {
 		@media only screen and (max-width: 570px) {
 			@content;
 		}
