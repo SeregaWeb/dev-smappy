@@ -2,12 +2,12 @@
 @import "variables";
 @import "mixin";
 @import "fonts";
-@import "_modal_window.scss";
 @import "_jquery.fancybox.min.scss";
 @import "_slick.scss";
 @import "_animations";
 @import '_404';
 @import '_common';
+@import "_modal_window.scss";
 
 @import './components/header';
 @import './components/hero';

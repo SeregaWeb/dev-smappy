@@ -42,14 +42,13 @@ function js_compile(){
 
 function combile_libs_js(){
 	return gulp.src([
+			'js/jquery.min.js',
 			'js/modernizr-2.0.6.min.js',
 			'js/jquery.easing-1.3.pack.js',
 			'js/jquery.mousewheel-3.0.6.pack.js',
 			'js/jquery.fancybox.min.js',
 			'js/jquery.touchSwipe.min.js',
-			'js/js.cookie.js',
 			'js/slick.js',
-			'js/lazy.js',
 		])
 		.pipe(concat('libs.js'))
 		.pipe(gulp.dest(paths.scripts.dest))

@@ -104,13 +104,10 @@
             left: 0;
             top: 0;
             display: flex;
-            justify-content: space-around;
+            justify-content: flex-start;
             width: 100%;
         }
 
-        @include break (small) {
-            justify-content: flex-start;
-        }
 
         @include break (phone) {
             justify-content: space-around;
@@ -200,12 +197,12 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
+                margin-right: 20px;
 
             }
 
-            @include break (small) {
-                margin-right: 20px;
+            @include break (phone) {
+                margin-right: 0;
             }
         }
 
@@ -216,6 +213,7 @@
             transform: translate(-50%, -50%);
             padding-bottom: 30px;
             text-align: center;
+            pointer-events: none;
 
             @include break (tablet) {
                 position: static;

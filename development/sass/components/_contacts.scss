@@ -103,6 +103,10 @@
             letter-spacing: 0.08em;
             color: $black;
 
+            * {
+                pointer-events: none;
+            }
+
             @include break (tablet) {
                 padding: 15px 25px;
                 min-width: 160px;
