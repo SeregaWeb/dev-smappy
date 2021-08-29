@@ -416,12 +416,20 @@
                                 </bdo>
                             </span>
                             <span class="control-select">
-                                <select name="column_1_select" dir="rtl"
-                                    class="control-input control-input--small">
+                                <select name="code_phone" dir="rtl" class="control-input control-input--small">
                                     <option label=" " disabled selected></option>
-                                    <option value="1">1</option>
+                                    <option value="050">050</option>
+                                    <option value="051">051</option>
+                                    <option value="052">052</option>
+                                    <option value="053">053</option>
+                                    <option value="054">054</option>
+                                    <option value="055">055</option>
+                                    <option value="058">058</option>
+
                                 </select>
-                                <input class="control-input" required type="text" dir="rtl" name="column_1">
+                                <input class="control-input" required type="tel" minlength="9"
+                                    pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$" dir="rtl"
+                                    name="phone_number">
                             </span>
                         </div>
 
@@ -433,7 +441,7 @@
                                 </bdo>
                             </span>
 
-                            <input class="control-input" required type="text" dir="rtl" name="column_2">
+                            <input class="control-input" required type="email" dir="rtl" name="email">
                         </label>
 
                         <label class="control">
@@ -444,12 +452,12 @@
                                 </bdo>
                             </span>
 
-                            <input class="control-input" required type="text" dir="rtl" name="column_3">
+                            <input class="control-input" required type="text" dir="rtl" name="full_name">
                         </label>
                     </div>
                     <div class="popup-form__center">
                         <label class="control control--center">
-                            <input type="number" class="control-input control-input--small " dir="rtl" name="column_4">
+                            <input type="number" class="control-input control-input--small " dir="rtl" name="expiriens">
                             <span class="control-text control-text__after">
                                 <bdo dir="ltr">
                                     ?םוחתב ךל שי ןויסינ ןמז המכ
@@ -459,7 +467,7 @@
                         <div class="checkboxs">
 
                             <label>
-                                <input type="checkbox" value="יריוואו ימי" name="column_5[]">
+                                <input type="checkbox" value="יריוואו ימי" name="license[]">
                                 <span>
                                     <bdo dir="ltr">
                                         יריוואו ימי
@@ -468,7 +476,7 @@
                             </label>
 
                             <label>
-                                <input type="checkbox" value="יללכ" name="column_5[]">
+                                <input type="checkbox" value="יללכ" name="license[]">
                                 <span>
                                     <bdo dir="ltr">
                                         יללכ
@@ -477,7 +485,7 @@
                             </label>
 
                             <label>
-                                <input type="checkbox" value="ינויסנפ" name="column_5[]">
+                                <input type="checkbox" value="ינויסנפ" name="license[]">
                                 <span>
                                     <bdo dir="ltr">
                                         ינויסנפ
@@ -610,12 +618,19 @@
                                 </bdo>
                             </span>
                             <span class="control-select">
-                                <select name="column_1_select" dir="rtl"
-                                    class="control-input control-input--small">
+                                <select name="code_phone" dir="rtl" class="control-input control-input--small">
                                     <option label=" " disabled selected></option>
-                                    <option value="1">1</option>
+                                    <option value="050">050</option>
+                                    <option value="051">051</option>
+                                    <option value="052">052</option>
+                                    <option value="053">053</option>
+                                    <option value="054">054</option>
+                                    <option value="055">055</option>
+                                    <option value="058">058</option>
                                 </select>
-                                <input class="control-input" required type="text" dir="rtl" name="column_1">
+                                <input class="control-input" required type="tel" minlength="9"
+                                    pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$" dir="rtl"
+                                    name="phone_number">
                             </span>
                         </div>
 
@@ -627,7 +642,7 @@
                                 </bdo>
                             </span>
 
-                            <input class="control-input" required type="text" dir="rtl" name="column_2">
+                            <input class="control-input" required type="email" dir="rtl" name="email">
                         </label>
 
                         <label class="control">
@@ -638,12 +653,12 @@
                                 </bdo>
                             </span>
 
-                            <input class="control-input" required type="text" dir="rtl" name="column_3">
+                            <input class="control-input" required type="text" dir="rtl" name="full_name">
                         </label>
                     </div>
                     <div class="popup-form__center">
                         <label class="control control--center">
-                            <input type="number" class="control-input control-input--small " dir="rtl" name="column_4">
+                            <input type="number" class="control-input control-input--small " dir="rtl" name="expiriens">
                             <span class="control-text control-text__after">
                                 <bdo dir="ltr">
                                     ?םוחתב ךל שי ןויסינ ןמז המכ
@@ -653,7 +668,7 @@
                         <div class="checkboxs checkboxs-transparent">
 
                             <label>
-                                <input type="checkbox" value="יללכ" name="column_5[]">
+                                <input type="checkbox" value="יללכ" name="license[]">
                                 <span>
                                     <bdo dir="ltr">
                                         יללכ
@@ -662,7 +677,7 @@
                             </label>
 
                             <label>
-                                <input type="checkbox" value="ינויסנפ" name="column_5[]">
+                                <input type="checkbox" value="ינויסנפ" name="license[]">
                                 <span>
                                     <bdo dir="ltr">
                                         ינויסנפ
@@ -1384,7 +1399,9 @@
                                     </svg>
 
                                     <div class="footer-contacts">
-                                        <a href="#" class="footer-links">
+
+                                        <!-- replace href facebook account -->
+                                        <a href="https://www.facebook.com" target="_blank" class="footer-links">
                                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1393,7 +1410,8 @@
                                             </svg>
 
                                         </a>
-                                        <a href="#" class="footer-links">
+                                        <!-- replace href linkedin account -->
+                                        <a href="https://www.linkedin.com" target="_blank" class="footer-links">
                                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1402,7 +1420,9 @@
                                             </svg>
 
                                         </a>
-                                        <a href="#" class="footer-links">
+                                        
+                                        <!-- replace href google account -->
+                                        <a href="https://www.google.com" class="footer-links" target="_blank">
                                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"

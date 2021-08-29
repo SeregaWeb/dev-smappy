@@ -7,14 +7,14 @@ $headers = 'From: webmaster@example.com'       . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
 // top column inputs
-$column_1_select =  filter_input(INPUT_POST,  'column_1_select', FILTER_SANITIZE_NUMBER_INT);
-$column_1 =         filter_input(INPUT_POST,  'column_1', FILTER_SANITIZE_STRING);
-$column_2 =         filter_input(INPUT_POST,  'column_2', FILTER_SANITIZE_STRING);
-$column_3 =         filter_input(INPUT_POST,  'column_3', FILTER_SANITIZE_STRING);
+$code_phone =  filter_input(INPUT_POST,  'code_phone', FILTER_SANITIZE_NUMBER_INT);
+$phone_number =         filter_input(INPUT_POST,  'phone_number', FILTER_SANITIZE_STRING);
+$email =         filter_input(INPUT_POST,  'email', FILTER_SANITIZE_STRING);
+$full_name =         filter_input(INPUT_POST,  'full_name', FILTER_SANITIZE_STRING);
 
 // center number and checkbox
-$column_4 =         filter_input(INPUT_POST,  'column_4', FILTER_SANITIZE_NUMBER_INT);
-$column_5 =         filter_input(INPUT_POST,  'column_5', FILTER_DEFAULT , FILTER_REQUIRE_ARRAY);
+$expiriens =         filter_input(INPUT_POST,  'expiriens', FILTER_SANITIZE_NUMBER_INT);
+$license =         filter_input(INPUT_POST,  'license', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
 
 // textarea
 $message_form =     filter_input(INPUT_POST,  'message', FILTER_SANITIZE_STRING);
@@ -25,9 +25,11 @@ $response = array(
     'message' => 'An error occurred while sending the letter'
 );
 
+
+
 // require
-if (!empty($column_1_select) && !empty($column_1)) {
-    $message = $column_1_select . ' ' . $column_1 . "\r\n";
+if (!empty($code_phone) && !empty($phone_number)) {
+    $message = $code_phone .  $phone_number . "\r\n";
 } else {
     $response['message'] = 'Column 1 require';
     echo json_encode($response, JSON_PRETTY_PRINT);
@@ -35,8 +37,8 @@ if (!empty($column_1_select) && !empty($column_1)) {
 }
 
 // require
-if (isset($column_2) && !empty($column_2)) {
-    $message .= $column_2 . "\r\n";
+if (isset($email) && !empty($email)) {
+    $message .= $email . "\r\n";
 } else {
     $response['message'] = 'Column 2 require';
     echo json_encode($response, JSON_PRETTY_PRINT);
@@ -44,20 +46,20 @@ if (isset($column_2) && !empty($column_2)) {
 }
 
 // require
-if (isset($column_3) && !empty($column_3)) {
-    $message .= $column_3 . "\r\n";
+if (isset($full_name) && !empty($full_name)) {
+    $message .= $full_name . "\r\n";
 } else {
     $response['message'] = 'Column 3 require';
     echo json_encode($response, JSON_PRETTY_PRINT);
     die;
 }
 
-if (isset($column_4) && !empty($column_4)) {
+if (isset($expiriens) && !empty($expiriens)) {
 
-    $message .= $column_4 . "\r\n";
+    $message .= $expiriens . "\r\n";
 }
-if (isset($column_5) && is_array($column_5)) {
-    $message .= implode(" | ", $column_5) . "\r\n";
+if (isset($license) && is_array($license)) {
+    $message .= implode(" | ", $license) . "\r\n";
 }
 $message .= $message_form . "\r\n";
 
