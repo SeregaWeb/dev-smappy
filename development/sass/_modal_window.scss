@@ -15,6 +15,7 @@ html {
 	box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.1);
 	border-radius: 40px;
 	padding: 0;
+	overflow-x: hidden;
 
 	.contact-btns__title {
 		font-size: 35px;
@@ -309,13 +310,12 @@ html {
 		}
 
 		&__btns.contact-btns {
-			margin-top: 46px;
+			margin-top: 50px;
 			display: flex;
 			justify-content: center;
 			flex-direction: column;
 			align-items: center;
-			margin-bottom: 40px;
-			
+			margin-bottom: 30px;
 
 			.contact-btns__container {
 				justify-content: center;
@@ -361,6 +361,8 @@ html {
 		justify-content: center;
 		align-items: center;
 		padding-left: 88px;
+		letter-spacing: -0.4px;
+
 		@include break (laptop) {
 			padding-left: 20px;
 		}
@@ -377,7 +379,7 @@ html {
 
 		svg {
 			position: relative;
-			right: 1px;
+			right: -10px;
 			margin-left: 25px;
 
 			@include break (laptop) {
@@ -422,11 +424,11 @@ html {
 	}
 
 	&:after {
-		font: 42px/30px Arial, Helvetica Neue, Helvetica, sans-serif;
+		font: 56px/30px Arial, Helvetica Neue, Helvetica, sans-serif;
 		color: #888;
 		border-radius: 0;
 		top: 10px;
-		right: 10px;
+		right: 2px;
 	}
 
 	&:hover:after {
