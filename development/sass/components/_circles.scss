@@ -54,10 +54,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
+        padding-left: 20px;
         @include break (tablet) {
             font-size: 40px;
             line-height: 46px;
+            padding-left: 0;
         }
 
         @include break (phone) {
@@ -67,12 +68,13 @@
         }
 
         svg {
-            margin: 0 4px;
+            margin: 0 14px 0 4px;
             margin-top: 20px;
 
             @include break (tablet) {
                 max-width: 145px;
                 margin-top: 10px;
+                margin: 0 4px 0 4px;
             }
 
             @include break (phone) {
@@ -87,35 +89,39 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background: linear-gradient(90deg, rgba(22, 209, 198, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
-    box-shadow: 0px 3px 10px rgba(14, 93, 137, 0.15);
+    box-shadow: 6px 6px 40px rgba(14, 93, 137, 0.22);
     // backdrop-filter: blur(20px);
     border-radius: 50%;
     z-index: 1;
     position: relative;
 
+    justify-content: flex-start;
+    padding-top: 50px;
 
-
+    @include break (laptop) {
+        justify-content: center;
+        padding-top: 0;
+    }
 
     @include break (small) {
         margin: 0 auto;
 
-        &:nth-of-type(1) {
-            order: 2;
-        }
+        // &:nth-of-type(1) {
+        //     order: 1;
+        // }
 
-        &:nth-of-type(2) {
-            order: 1;
-        }
+        // &:nth-of-type(2) {
+        //     order: 1;
+        // }
 
-        &:nth-of-type(3) {
-            order: 4;
-        }
+        // &:nth-of-type(3) {
+        //     order: 4;
+        // }
 
-        &:nth-of-type(4) {
-            order: 3;
-        }
+        // &:nth-of-type(4) {
+        //     order: 3;
+        // }
     }
 
     * {
@@ -157,7 +163,7 @@
 
     &::after {
         content: '';
-        backdrop-filter: blur(20px);
+        backdrop-filter: blur(10px);
         border-radius: 50%;
         z-index: 2;
         width: 100%;
@@ -224,10 +230,18 @@
     &-small {
         width: 437px;
         height: 437px;
-
+        margin-bottom: 15px;
+        margin-left: 30px;
+        @include break (laptop) {
+            margin-bottom: 0;
+            margin-left: 0;
+        }
         @include break (tablet) {
             width: 280px;
             height: 280px;
+        }
+        @include break (small) {
+            margin-left: auto;
         }
     }
 
@@ -246,7 +260,7 @@
         line-height: 40px;
         text-align: center;
         color: $black;
-        margin-top: 25px;
+        margin-top: 15px;
 
         @include break (tablet) {
             font-size: 24px;

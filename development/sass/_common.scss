@@ -91,7 +91,7 @@ p:empty {
 .control {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
+    align-items: flex-start;
 
 	&-text {
 		font-family: $rubik;
@@ -120,6 +120,9 @@ p:empty {
 	&--center {
 		flex-direction: row;
 		align-items: center;
+		@include break (small) {
+			align-self: flex-end;
+		}
 	}
 
 	&-input {
@@ -178,6 +181,7 @@ p:empty {
 			letter-spacing: 0.08em;
 			text-transform: uppercase;
 			color: #C9CAD1;
+			display: flex;
 		}
 	}
 
@@ -199,7 +203,7 @@ p:empty {
 			background-position: left 15px center;
 		}
 
-		select+input {
+		input {
 			border-radius: 0 8px 8px 0;
 		}
 	}
@@ -218,6 +222,13 @@ p:empty {
 	label {
 		margin-right: 10px;
 		position: relative;
+		cursor: pointer;
+		margin-right: 20px;
+		min-width: 100px;
+
+		*{
+			pointer-events: none;
+		}
 
 		@include break (small) {
 			margin-right: 0;
@@ -247,6 +258,7 @@ p:empty {
 			color: $black;
 			z-index: 1;
 			position: relative;
+			cursor: pointer;
 
 			&::after {
 				content: '';
@@ -305,7 +317,7 @@ p:empty {
 				color: $black;
 				z-index: 1;
 				position: relative;
-
+				cursor: pointer;
 				&::after {
 					display: none;
 				}

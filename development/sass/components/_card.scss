@@ -1,38 +1,63 @@
 .card {
     position: relative;
+    
+    @include break (laptop) {
+        margin-top: 40px;
+    }
+
+    @include break (phone) {
+        margin-top: 0;
+    }
 
     &:before {
         content: '';
         background-image: url('../../static/images/Vector2.svg');
         position: absolute;
-        height: 413px;
-        width: 200px;
+
+        height: 869px;
+        width: 396px;
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: right;
-        right: -20px;
-        top: -50px;
+        right: 0px;
+        top: -140px;
         z-index: 1;
+
+        @include break (laptop) {
+            height: 413px;
+            width: 200px;
+            right: -20px;
+            top: -50px;
+        }
     }
 
     &::after {
         content: '';
         background-image: url('../../static/images/Vector5.svg');
         position: absolute;
-        height: 350px;
-        width: 250px;
+        height: 765px;
+        width: 510px;
+
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center;
-        left: 0;
-        bottom: 0;
+
+        left: 0px;
+        bottom: -215px;
         z-index: 1;
+
+        @include break (laptop) {
+            height: 350px;
+            width: 250px;
+            left: 0;
+            bottom: 0;
+        }
     }
 
     &-center {
         z-index: 2;
         text-align: right;
-        padding: 54px 68px 86px;
+        padding: 54px 86px 86px 68px;
         display: flex;
         justify-content: space-between;
         max-width: 1110px;
@@ -69,7 +94,8 @@
             font-size: 36px;
             line-height: 60px;
             color: $black;
-            margin-bottom: 42px;
+            margin-bottom: 35px;
+            letter-spacing: -0.3px;
 
             @include break (tablet) {
                 font-size: 26px;
@@ -95,7 +121,8 @@
             font-size: 26px;
             line-height: 40px;
             color: $black;
-            margin-bottom: 42px;
+            letter-spacing: -0.1px;
+            margin-bottom: 34px;
 
             @include break (tablet) {
                 font-size: 22px;

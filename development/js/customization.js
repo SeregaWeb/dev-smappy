@@ -33,9 +33,9 @@
 								console.log(requestStatus)
 								if (requestStatus.success === true) {
 									form.reset();
-									notice_container.innerHTML = `<p class="notice-success"><bdo dir="rtr">${requestStatus.message}</bdo></p>`;
+									notice_container.innerHTML = `<p class="notice-success">${requestStatus.message}</p>`;
 								} else {
-									notice_container.innerHTML = `<p class="notice-error"><bdo dir="rtr">${requestStatus.message}</bdo></p>`;
+									notice_container.innerHTML = `<p class="notice-error">${requestStatus.message}</p>`;
 								}
 							});
 					}
