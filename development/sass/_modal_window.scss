@@ -16,6 +16,14 @@ html {
 	border-radius: 40px;
 	padding: 0;
 
+	.contact-btns__title {
+		font-size: 35px;
+
+		@include break (tablet) {
+			font-size: 24px;
+		}
+	} 
+
 	&-preview {
 		&::after {
 			content: '';
