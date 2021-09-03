@@ -1,6 +1,6 @@
 .card {
     position: relative;
-    
+
     @include break (laptop) {
         margin-top: 40px;
     }
@@ -133,6 +133,16 @@
             @include break (phone) {
                 font-size: 18px;
                 line-height: 1.2;
+
+                br {
+                    display: none;
+                }
+            }
+        }
+
+        figure {
+            @include break (phone) {
+                margin-top: 20px;
             }
         }
 
@@ -144,6 +154,7 @@
             line-height: 1.8;
             color: $grey;
 
+
             @include break (tablet) {
                 font-size: 18px;
                 line-height: 1.4;
@@ -152,6 +163,10 @@
             @include break (phone) {
                 font-size: 14px;
                 line-height: 1.2;
+
+                br {
+                    display: none;
+                }
             }
         }
     }

@@ -66,7 +66,7 @@ $message .= $message_form . "\r\n";
 $res = mail($to, $subject, $message, $headers);
 
 if ($res) {
-    $response['message'] = 'Message sent successfully';
+    $response['message'] = 'ההודעה נשלחה בהצלחה';
     echo json_encode($response, JSON_PRETTY_PRINT);
     die;
 }

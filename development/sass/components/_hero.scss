@@ -49,6 +49,7 @@
         @include break (large1650) {
             padding-right: 40px;
         }
+
         @include break(laptop) {
             padding-bottom: 0;
             padding-right: 40px;
@@ -72,7 +73,7 @@
             font-weight: 800;
             font-size: 72px;
             line-height: 85px;
-        
+
             text-align: center;
             color: #FFFFFF;
             text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
@@ -118,10 +119,20 @@
 
 
         @include break (phone) {
-            justify-content: space-around;
-            flex-wrap: wrap;
-            height: 240px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 5px;
+            margin-bottom: 140px;
+            height: auto;
+            min-height: 1px;
+            font-size: 16px;
+            text-align: right;
         }
+
+        @include break (x-small) {
+            grid-template-columns: 1fr 1fr;
+        }
+       
     }
 
     &-block {
@@ -139,6 +150,7 @@
             &:hover {
                 background-image: url('../../static/images/block-top-hover.svg');
             }
+
             @include break (tablet) {
                 background: linear-gradient(270deg, #16D1C6 0%, #0E5D89 92.5%);
             }
@@ -208,11 +220,20 @@
                 align-items: center;
                 justify-content: center;
                 margin-right: 20px;
+                border-radius: 50% 10px 50% 50%;
 
+                &:hover {
+                    strong {
+                        display: none;
+                    }
+                }
             }
 
             @include break (phone) {
                 margin-right: 0;
+                border-radius: 15px;
+                height: 48px;
+                width: 100%;
             }
         }
 
@@ -234,10 +255,23 @@
                 background-image: unset;
                 transform: translate(0, 0);
                 padding-bottom: 0;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
 
                 &:hover {
                     background-image: unset;
                 }
+            }
+
+            @include break (phone) {
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
             }
 
             strong {
@@ -258,6 +292,7 @@
                     font-size: 14px;
                     line-height: 1;
                     margin-bottom: 5px;
+
                 }
             }
 
@@ -265,9 +300,16 @@
                 margin-bottom: 15px;
 
                 @include break (tablet) {
-                    width: 35px;
-                    height: 37px;
-                    margin-bottom: 0;
+                    width: 60px;
+                    height: 43px;
+                    margin-top: 20px;
+                    margin-bottom: 6px;
+                }
+
+                @include break (phone) {
+                    width: 46px;
+                    height: 32px;
+                    margin: 0;
                 }
             }
 
@@ -286,6 +328,20 @@
                 @include break (tablet) {
                     font-size: 14px;
                     line-height: 1;
+                    display: flex;
+                    align-items: flex-start;
+                    min-height: 28px;
+                }
+
+                @include break (phone) {
+                    margin: 0;
+                    min-height: 1px;
+                    text-align: right;
+                    font-size: 16px;
+                }
+
+                @include break (small-380) {
+                    font-size: 14px;
                 }
 
             }

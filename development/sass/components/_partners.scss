@@ -42,9 +42,10 @@
         }
 
         @include break (phone) {
-            grid-template-columns: 135px 135px;
             grid-gap: 10px;
             padding-bottom: 40px;
+            display: flex;
+            flex-wrap: wrap;
         }
     }
 
@@ -101,6 +102,7 @@
         }
         @include break (phone) {
             font-size: 18px;
+            line-height: 15px;
         }
     }
 
@@ -122,6 +124,7 @@
         }
         @include break (phone) {
             font-size: 14px;
+            line-height: 12px;
         }
     }
 
@@ -137,6 +140,7 @@
         z-index: 1;
         @include break (phone) {
             height: 135px;
+            width: 135px;
             padding: 10px;
         }
     }

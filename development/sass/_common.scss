@@ -354,12 +354,12 @@ p:empty {
 	p {
 		width: 100%;
 		display: block;
-		font-size: 12px;
+		font-size: 14px;
 		text-align: center;
 		margin-top: 10px;
 	}
 	&-success {
-		color: green;
+		color: #000000;
 	}
 	&-error {
 		color: red;
